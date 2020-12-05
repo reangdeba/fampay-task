@@ -27,7 +27,6 @@ app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
 
-# DEVELOPER_KEY = 'AIzaSyAG01ADTVZCm06z4oa_usvxpigqYYQ_KO8'
 if os.environ['DEVELOPER_KEY']:
     DEVELOPER_KEY = os.environ['DEVELOPER_KEY']
 else:
