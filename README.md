@@ -7,7 +7,7 @@ There are two files:
 
 **Database initialization code.** `create_db.py` initializes a database file, and then creates a table in it. This table will be used later on to store the data we get from YouTube API. This part of the code is therefore concerned with just initializing the database and creating an empty new table.
 
-**User interface.** This part of the code does the major work. The results would be served via a web server, which is just a simple Flask application. `serve.py` fetches data from the YOuTube API, updates the table(s) we just created, and then displays it.
+**User interface.** This part of the code does the major work. The results would be served via a web server, which is just a simple Flask application. `serve.py` fetches data from the YouTube API, updates the table(s) we just created, and then displays it.
 
 ### Dependencies
 There are several dependencies. The major ones are flask (the backbone), google-api-python-client (for getting YouTube data), sqlite3 for database, and apscheduler for running tasks periodically. You can install all of these through `pip`, e.g.:
